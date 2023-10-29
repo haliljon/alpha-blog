@@ -7,5 +7,5 @@
     <%= f.email_field :email%></p>
     <p><%= f.label :password%><br/>
     <%= f.password_field :password%></p>
-    <p><%= f.submit 'Sign up' %></p>
+    <p><%= f.submit (@user.new_record? ? 'Sign up' : 'Update account') %></p>
 <%end%>
